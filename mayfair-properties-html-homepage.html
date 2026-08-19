@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayfair Properties & Developers — Ultra-Luxury Real Estate India</title>
+  <meta name="description" content="Mayfair Properties & Developers — India's foremost ultra-luxury real estate firm specialising in high-end residential acquisitions across Mumbai, Delhi, Bangalore and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary: #000000;
+      --color-primary-container: #1c1b1b;
+      --color-on-primary: #ffffff;
+      --color-on-primary-container: #858383;
+      --color-secondary: #725b2f;
+      --color-secondary-container: #ffdea7;
+      --color-secondary-fixed-dim: #e1c28e;
+      --color-on-secondary-container: #796135;
+      --color-background: #fdf9f0;
+      --color-surface: #fdf9f0;
+      --color-surface-container-lowest: #ffffff;
+      --color-surface-container-low: #f7f3ea;
+      --color-surface-container: #f2ede4;
+      --color-surface-container-high: #ece8df;
+      --color-surface-container-highest: #e6e2d9;
+      --color-surface-variant: #e6e2d9;
+      --color-on-surface: #1c1c16;
+      --color-on-surface-variant: #444748;
+      --color-outline: #747878;
+      --color-outline-variant: #c4c7c7;
+
+      --font-family-display: 'Playfair Display', Georgia, serif;
+      --font-family-body: 'Inter', system-ui, sans-serif;
+
+      --spacing-edge: 40px;
+      --spacing-stack-sm: 8px;
+      --spacing-stack-md: 16px;
+      --spacing-stack-lg: 32px;
+      --spacing-gutter: 24px;
+      --spacing-section: 100px;
+      --width-max: 1280px;
+
+      --radius-DEFAULT: 0.125rem;
+      --radius-lg: 0.25rem;
+      --radius-xl: 0.5rem;
+      --radius-full: 0.75rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #fdf9f0;
+      color: #1c1c16;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .font-body    { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Material Symbols */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    /* ─── NAV ─── */
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1c1c16;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover { color: #725b2f; }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #725b2f;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 2px;
+      border: 1px solid #725b2f;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: #5c481f; border-color: #5c481f; }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #1c1c16;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 13px 32px;
+      border-radius: 2px;
+      border: 1px solid #1c1c16;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-outline:hover { background: #1c1c16; color: #ffffff; }
+
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 13px 32px;
+      border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.6);
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: #ffffff; }
+
+    /* ─── HERO ─── */
+    .hero-overlay {
+      background: linear-gradient(
+        105deg,
+        rgba(0,0,0,0.72) 0%,
+        rgba(0,0,0,0.42) 55%,
+        rgba(0,0,0,0.15) 100%
+      );
+    }
+
+    /* ─── PROPERTY CARDS ─── */
+    .property-card {
+      background: #ffffff;
+      border: 1px solid #e6e2d9;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .property-card:hover {
+      box-shadow: 0 12px 48px rgba(0,0,0,0.10);
+      transform: translateY(-3px);
+    }
+    .property-card img {
+      transition: transform 0.5s ease;
+    }
+    .property-card:hover img {
+      transform: scale(1.04);
+    }
+
+    /* ─── STAT CARD ─── */
+    .stat-divider {
+      width: 32px;
+      height: 2px;
+      background: #725b2f;
+      margin: 12px 0;
+    }
+
+    /* ─── TESTIMONIAL ─── */
+    .testimonial-card {
+      border-left: 3px solid #725b2f;
+      background: #ffffff;
+      border-radius: 0 2px 2px 0;
+    }
+
+    /* ─── SERVICE CARD ─── */
+    .service-card {
+      border-top: 2px solid #e6e2d9;
+      transition: border-color 0.2s ease;
+    }
+    .service-card:hover { border-top-color: #725b2f; }
+
+    /* ─── BRONZE RULE ─── */
+    .bronze-rule {
+      width: 48px;
+      height: 2px;
+      background: #725b2f;
+    }
+
+    /* ─── MOBILE NAV ─── */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+
+    /* ─── SECTION LABEL ─── */
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #725b2f;
+    }
+
+    /* ─── SCROLL BAR ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f2ede4; }
+    ::-webkit-scrollbar-thumb { background: #c4c7c7; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #747878; }
+
+    /* ─── CITY PILLS ─── */
+    .city-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #725b2f;
+      background: #fdf9f0;
+      border: 1px solid #e1c28e;
+      padding: 5px 14px;
+      border-radius: 2px;
+    }
+
+    /* ─── IMAGE CAPTION BADGE ─── */
+    .img-badge {
+      background: rgba(28,27,27,0.85);
+      backdrop-filter: blur(4px);
+      color: #e1c28e;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+    }
+
+    /* ─── MARQUEE ─── */
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+    .marquee-wrap { overflow: hidden; }
+
+    /* ─── RESPONSIVE HERO TEXT ─── */
+    @media (max-width: 768px) {
+      .hero-display { font-size: 38px !important; }
+      .section-pad { padding-top: 64px !important; padding-bottom: 64px !important; }
+      .edge-pad { padding-left: 20px !important; padding-right: 20px !important; }
+    }
+
+    /* ─── FORM INPUT ─── */
+    .form-input {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #c4c7c7;
+      border-radius: 2px;
+      padding: 14px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #1c1c16;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .form-input:focus { border-color: #725b2f; }
+    .form-input::placeholder { color: #747878; }
+
+    .form-select {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #c4c7c7;
+      border-radius: 2px;
+      padding: 14px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #1c1c16;
+      outline: none;
+      appearance: none;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .form-select:focus { border-color: #725b2f; }
+  </style>
+</head>
+<body class="bg-[#fdf9f0] text-[#1c1c16]">
+
+<!-- ═══════════════════════════════════════════════
+     TOP BAR
+═══════════════════════════════════════════════ -->
+<div class="bg-[#1c1b1b] text-[#858383] py-2 px-5 md:px-10">
+  <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+    <span class="font-body text-[11px] tracking-[0.12em] uppercase">Established 1997 · India's Premier Luxury Real Estate Firm</span>
+    <div class="hidden md:flex items-center gap-6">
+      <a href="tel:+912268880000" class="font-body text-[11px] tracking-wide text-[#858383] hover:text-[#e1c28e] transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined" style="font-size:14px">call</span>+91 22 6888 0000
+      </a>
+      <span class="text-[#444748]">|</span>
+      <a href="mailto:acquisitions@mayfairproperties.in" class="font-body text-[11px] tracking-wide text-[#858383] hover:text-[#e1c28e] transition-colors flex items-center gap-1">
+        <span class="material-symbols-outlined" style="font-size:14px">mail</span>acquisitions@mayfairproperties.in
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════ -->
+<header id="main-nav" class="sticky top-0 z-50 bg-[#fdf9f0]/95 backdrop-blur-sm border-b border-[#e6e2d9]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10 flex items-center justify-between h-[72px]">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 group">
+      <div class="w-[36px] h-[36px] bg-[#1c1b1b] flex items-center justify-center rounded-sm flex-shrink-0">
+        <span class="font-display text-[#e1c28e] font-semibold text-[15px] leading-none">M</span>
+      </div>
+      <div>
+        <div class="font-display text-[#1c1c16] font-semibold text-[15px] leading-tight tracking-wide">Mayfair</div>
+        <div class="font-body text-[#725b2f] font-semibold text-[9px] tracking-[0.18em] uppercase leading-none">Properties & Developers</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#properties" class="nav-link">Portfolio</a>
+      <a href="#services"   class="nav-link">Services</a>
+      <a href="#locations"  class="nav-link">Locations</a>
+      <a href="#about"      class="nav-link">About</a>
+      <a href="#insights"   class="nav-link">Insights</a>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <div class="hidden lg:flex items-center gap-4">
+      <a href="#contact" class="btn-outline" style="padding:10px 22px; font-size:12px;">Schedule Consultation</a>
+      <a href="tel:+912268880000" class="btn-primary" style="padding:10px 22px; font-size:12px;">
+        <span class="material-symbols-outlined" style="font-size:15px">call</span>Call Now
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="hamburger" class="lg:hidden flex flex-col gap-[5px] p-2" onclick="toggleMenu()">
+      <span class="w-6 h-[1.5px] bg-[#1c1c16] block"></span>
+      <span class="w-6 h-[1.5px] bg-[#1c1c16] block"></span>
+      <span class="w-4 h-[1.5px] bg-[#725b2f] block"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="flex-col bg-[#fdf9f0] border-t border-[#e6e2d9] px-5 py-6 gap-5 lg:hidden">
+    <a href="#properties" onclick="toggleMenu()" class="nav-link block py-2 border-b border-[#f2ede4]">Portfolio</a>
+    <a href="#services"   onclick="toggleMenu()" class="nav-link block py-2 border-b border-[#f2ede4]">Services</a>
+    <a href="#locations"  onclick="toggleMenu()" class="nav-link block py-2 border-b border-[#f2ede4]">Locations</a>
+    <a href="#about"      onclick="toggleMenu()" class="nav-link block py-2 border-b border-[#f2ede4]">About</a>
+    <a href="#insights"   onclick="toggleMenu()" class="nav-link block py-2 border-b border-[#f2ede4]">Insights</a>
+    <div class="flex gap-3 pt-2">
+      <a href="#contact"           class="btn-outline flex-1 justify-center" style="padding:11px 16px; font-size:12px;">Consultation</a>
+      <a href="tel:+912268880000"  class="btn-primary flex-1 justify-center" style="padding:11px 16px; font-size:12px;">Call Now</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════ -->
+<section class="relative h-[92vh] min-h-[620px] max-h-[900px] overflow-hidden">
+
+  <!-- Background Image -->
+  <img
+    src="https://images.pexels.com/photos/8082322/pexels-photo-8082322.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600"
+    alt="Mayfair luxury estate"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    loading="eager"
+  />
+  <div class="hero-overlay absolute inset-0"></div>
+
+  <!-- Vertical Text (desktop) -->
+  <div class="hidden xl:flex absolute left-8 top-1/2 -translate-y-1/2 flex-col items-center gap-3">
+    <div class="w-[1px] h-20 bg-[rgba(255,255,255,0.3)]"></div>
+    <span class="font-body text-[10px] text-[rgba(255,255,255,0.5)] tracking-[0.2em] uppercase" style="writing-mode:vertical-rl; transform:rotate(180deg)">Mayfair Properties</span>
+    <div class="w-[1px] h-20 bg-[rgba(255,255,255,0.3)]"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 h-full flex items-end pb-16 md:pb-20">
+    <div class="max-w-[1280px] mx-auto px-5 md:px-10 w-full">
+      <div class="max-w-[680px]">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-[1.5px] bg-[#e1c28e]"></div>
+          <span class="font-body text-[11px] font-semibold tracking-[0.2em] uppercase text-[#e1c28e]">Ultra-Luxury Residential</span>
+        </div>
+
+        <h1 class="hero-display font-display text-white leading-[1.1] font-semibold mb-6" style="font-size: clamp(36px, 5.5vw, 68px);">
+          Where Extraordinary<br />
+          <em class="font-normal text-[#e1c28e]">Architecture</em><br />
+          Meets Rare Ownership
+        </h1>
+
+        <p class="font-body text-[rgba(255,255,255,0.72)] text-[16px] leading-[1.7] mb-10 max-w-[480px]">
+          Curated acquisitions across India's most coveted addresses — from South Mumbai penthouses to Delhi's Lutyens' Bungalow Zone and Bangalore's Sadashivanagar estates.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#properties" class="btn-primary">
+            Explore Portfolio
+            <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+          </a>
+          <a href="#contact" class="btn-outline-white">
+            Private Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="mt-14 pt-8 border-t border-[rgba(255,255,255,0.15)] grid grid-cols-3 md:grid-cols-3 gap-6 md:gap-0 max-w-[520px]">
+        <div>
+          <div class="font-display text-white font-semibold text-[28px] md:text-[32px] leading-none">₹48K <span class="text-[#e1c28e] text-[20px]">Cr+</span></div>
+          <div class="font-body text-[rgba(255,255,255,0.55)] text-[11px] tracking-wide uppercase mt-2">Assets Transacted</div>
+        </div>
+        <div class="md:border-l border-[rgba(255,255,255,0.15)] md:pl-8">
+          <div class="font-display text-white font-semibold text-[28px] md:text-[32px] leading-none">2,400<span class="text-[#e1c28e] text-[20px]">+</span></div>
+          <div class="font-body text-[rgba(255,255,255,0.55)] text-[11px] tracking-wide uppercase mt-2">Homes Curated</div>
+        </div>
+        <div class="md:border-l border-[rgba(255,255,255,0.15)] md:pl-8">
+          <div class="font-display text-white font-semibold text-[28px] md:text-[32px] leading-none">27 <span class="text-[#e1c28e] text-[20px]">yrs</span></div>
+          <div class="font-body text-[rgba(255,255,255,0.55)] text-[11px] tracking-wide uppercase mt-2">Market Legacy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 right-10 hidden md:flex flex-col items-center gap-2">
+    <span class="font-body text-[10px] text-[rgba(255,255,255,0.45)] tracking-[0.18em] uppercase" style="writing-mode:vertical-rl">Scroll</span>
+    <div class="w-[1px] h-12 bg-[rgba(255,255,255,0.3)]"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     PROPERTY SEARCH BAR
+═══════════════════════════════════════════════ -->
+<section class="bg-[#1c1b1b] py-0">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+    <div class="bg-[#1c1b1b] border-b border-[#2e2d2d] py-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+        <div>
+          <label class="font-body text-[10px] font-semibold tracking-[0.15em] uppercase text-[#858383] block mb-2">City / Locality</label>
+          <select class="form-select bg-[#252424] border-[#3a3939] text-[#e6e2d9] focus:border-[#e1c28e]" style="border-radius:2px;">
+            <option value="">All Locations</option>
+            <option>South Mumbai</option>
+            <option>Lutyens Delhi</option>
+            <option>Sadashivanagar, Bangalore</option>
+            <option>Boat Club Road, Pune</option>
+            <option>Jubilee Hills, Hyderabad</option>
+            <option>Alipore, Kolkata</option>
+          </select>
+        </div>
+        <div>
+          <label class="font-body text-[10px] font-semibold tracking-[0.15em] uppercase text-[#858383] block mb-2">Property Type</label>
+          <select class="form-select bg-[#252424] border-[#3a3939] text-[#e6e2d9] focus:border-[#e1c28e]" style="border-radius:2px;">
+            <option value="">All Types</option>
+            <option>Penthouse</option>
+            <option>Villa / Bungalow</option>
+            <option>Sea-Facing Apartment</option>
+            <option>Heritage Haveli</option>
+            <option>Golf Estate</option>
+          </select>
+        </div>
+        <div>
+          <label class="font-body text-[10px] font-semibold tracking-[0.15em] uppercase text-[#858383] block mb-2">Budget Range</label>
+          <select class="form-select bg-[#252424] border-[#3a3939] text-[#e6e2d9] focus:border-[#e1c28e]" style="border-radius:2px;">
+            <option value="">Any Budget</option>
+            <option>₹5 Cr – ₹15 Cr</option>
+            <option>₹15 Cr – ₹50 Cr</option>
+            <option>₹50 Cr – ₹150 Cr</option>
+            <option>₹150 Cr+</option>
+          </select>
+        </div>
+        <div>
+          <button class="btn-primary w-full justify-center" style="padding:14px 24px;">
+            <span class="material-symbols-outlined" style="font-size:17px">search</span>
+            Search Properties
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     MARQUEE — CITY NAMES
+═══════════════════════════════════════════════ -->
+<div class="bg-[#f7f3ea] border-y border-[#e6e2d9] py-4 marquee-wrap">
+  <div class="marquee-track">
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">South Mumbai</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Lutyens Delhi</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Sadashivanagar · Bangalore</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Boat Club Road · Pune</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Jubilee Hills · Hyderabad</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Alipore · Kolkata</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Banjara Hills · Hyderabad</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">South Mumbai</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Lutyens Delhi</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Sadashivanagar · Bangalore</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Boat Club Road · Pune</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Jubilee Hills · Hyderabad</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Alipore · Kolkata</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+    <span class="font-body text-[11px] font-semibold tracking-[0.15em] uppercase text-[#444748] mx-10">Banjara Hills · Hyderabad</span>
+    <span class="text-[#e1c28e] mx-2">◆</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     FEATURED PROPERTIES
+═══════════════════════════════════════════════ -->
+<section id="properties" class="section-pad py-[80px] md:py-[100px] bg-[#fdf9f0]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="section-label">Featured Portfolio</span>
+        <div class="bronze-rule mt-3 mb-5"></div>
+        <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2]" style="font-size: clamp(28px, 3.5vw, 42px);">
+          Exceptional Residences,<br />Carefully Curated
+        </h2>
+      </div>
+      <a href="#" class="btn-outline flex-shrink-0 self-start md:self-auto">
+        View All Listings
+        <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Property Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <!-- Card 1 — Featured / Large -->
+      <div class="property-card md:col-span-2 lg:col-span-1 lg:row-span-1">
+        <div class="relative overflow-hidden h-[280px] md:h-[360px] lg:h-[300px]">
+          <img
+            src="https://images.pexels.com/photos/8135492/pexels-photo-8135492.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900"
+            alt="Sea-view penthouse Worli"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="img-badge">Exclusive</span>
+          </div>
+          <div class="absolute bottom-4 right-4">
+            <span class="img-badge">Sea View</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="city-tag">Mumbai</span>
+            <span class="city-tag">Worli</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[20px] leading-tight mb-2">Skywood Penthouse — Worli Sea Face</h3>
+          <p class="font-body text-[#444748] text-[14px] leading-relaxed mb-5">A 14,000 sq ft triplex penthouse with panoramic Arabian Sea views, private terrace, and bespoke Italian interiors.</p>
+          <div class="flex flex-wrap gap-4 text-[#444748] text-[13px] mb-6">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">bed</span> 6 BHK</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">straighten</span> 14,000 sq ft</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">garage</span> 4 Car Park</span>
+          </div>
+          <div class="flex items-center justify-between border-t border-[#e6e2d9] pt-5">
+            <div>
+              <div class="font-body text-[10px] font-semibold tracking-[0.12em] uppercase text-[#725b2f] mb-1">Asking Price</div>
+              <div class="font-display text-[#1c1c16] font-semibold text-[22px]">₹ 285 Cr</div>
+            </div>
+            <a href="#contact" class="btn-primary" style="padding:10px 20px; font-size:12px;">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="property-card">
+        <div class="relative overflow-hidden h-[240px]">
+          <img
+            src="https://images.pexels.com/photos/8143671/pexels-photo-8143671.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=480&w=720"
+            alt="Lutyens Bungalow Delhi"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="img-badge">Off Market</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="city-tag">Delhi</span>
+            <span class="city-tag">Lutyens Zone</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[18px] leading-tight mb-2">The Clarendon — Aurangzeb Road</h3>
+          <p class="font-body text-[#444748] text-[13px] leading-relaxed mb-5">A Grade II heritage bungalow spanning 22,000 sq ft across a lush acre, freshly restored with bespoke craftsmanship.</p>
+          <div class="flex flex-wrap gap-3 text-[#444748] text-[12px] mb-5">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:15px;color:#725b2f">bed</span> 8 BHK</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:15px;color:#725b2f">straighten</span> 22,000 sq ft</span>
+          </div>
+          <div class="flex items-center justify-between border-t border-[#e6e2d9] pt-4">
+            <div>
+              <div class="font-body text-[10px] font-semibold tracking-[0.12em] uppercase text-[#725b2f] mb-1">Asking Price</div>
+              <div class="font-display text-[#1c1c16] font-semibold text-[20px]">₹ 420 Cr</div>
+            </div>
+            <a href="#contact" class="btn-outline" style="padding:9px 18px; font-size:12px;">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="property-card">
+        <div class="relative overflow-hidden h-[240px]">
+          <img
+            src="https://images.pexels.com/photos/8134745/pexels-photo-8134745.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=480&w=720"
+            alt="Sadashivanagar Villa Bangalore"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="img-badge">New Listing</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="city-tag">Bangalore</span>
+            <span class="city-tag">Sadashivanagar</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[18px] leading-tight mb-2">Meridian House — Palace Orchards</h3>
+          <p class="font-body text-[#444748] text-[13px] leading-relaxed mb-5">A contemporary concrete-and-glass masterpiece by a celebrated Mumbai architect, set behind verdant 2-acre grounds.</p>
+          <div class="flex flex-wrap gap-3 text-[#444748] text-[12px] mb-5">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:15px;color:#725b2f">bed</span> 5 BHK</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined" style="font-size:15px;color:#725b2f">straighten</span> 9,800 sq ft</span>
+          </div>
+          <div class="flex items-center justify-between border-t border-[#e6e2d9] pt-4">
+            <div>
+              <div class="font-body text-[10px] font-semibold tracking-[0.12em] uppercase text-[#725b2f] mb-1">Asking Price</div>
+              <div class="font-display text-[#1c1c16] font-semibold text-[20px]">₹ 96 Cr</div>
+            </div>
+            <a href="#contact" class="btn-outline" style="padding:9px 18px; font-size:12px;">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Wide -->
+      <div class="property-card md:col-span-2 lg:col-span-2">
+        <div class="flex flex-col md:flex-row h-full">
+          <div class="relative overflow-hidden md:w-[55%] h-[240px] md:h-auto flex-shrink-0">
+            <img
+              src="https://images.pexels.com/photos/36676879/pexels-photo-36676879.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=800"
+              alt="Golf Estate Pune"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div class="absolute top-4 left-4">
+              <span class="img-badge">Golf Facing</span>
+            </div>
+          </div>
+          <div class="p-7 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="city-tag">Pune</span>
+                <span class="city-tag">Kalyani Nagar</span>
+              </div>
+              <h3 class="font-display text-[#1c1c16] font-semibold text-[22px] leading-tight mb-3">The Fairway Residence</h3>
+              <p class="font-body text-[#444748] text-[14px] leading-relaxed mb-6">Sprawling 18,500 sq ft villa overlooking the 18th fairway of Poona Club Golf Course. Private gym, 15m infinity pool, home theatre, and 5-car motor court.</p>
+              <div class="flex flex-wrap gap-5 text-[#444748] text-[13px] mb-6">
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">bed</span> 7 BHK</span>
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">pool</span> Infinity Pool</span>
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">fitness_center</span> Gym & Spa</span>
+                <span class="flex items-center gap-1.5"><span class="material-symbols-outlined" style="font-size:16px;color:#725b2f">movie</span> Home Theatre</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between border-t border-[#e6e2d9] pt-5">
+              <div>
+                <div class="font-body text-[10px] font-semibold tracking-[0.12em] uppercase text-[#725b2f] mb-1">Asking Price</div>
+                <div class="font-display text-[#1c1c16] font-semibold text-[24px]">₹ 148 Cr</div>
+              </div>
+              <a href="#contact" class="btn-primary">
+                Request Viewing
+                <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Grid -->
+
+    <!-- View All CTA -->
+    <div class="mt-14 text-center">
+      <a href="#" class="btn-outline">
+        View All 60+ Curated Listings
+        <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ABOUT / PHILOSOPHY SPLIT
+═══════════════════════════════════════════════ -->
+<section id="about" class="py-[80px] md:py-[100px] bg-[#f7f3ea]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Images -->
+      <div class="relative">
+        <div class="relative z-10 overflow-hidden rounded-sm shadow-xl" style="border-radius:2px;">
+          <img
+            src="https://images.pexels.com/photos/6957083/pexels-photo-6957083.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=900"
+            alt="Mayfair luxury residence interior"
+            class="w-full h-[420px] md:h-[520px] object-cover"
+            loading="lazy"
+          />
+        </div>
+        <!-- Floating inset image -->
+        <div class="absolute -bottom-8 -right-4 md:-right-10 w-[200px] md:w-[260px] border-4 border-[#fdf9f0] overflow-hidden shadow-2xl" style="border-radius:2px; z-index:20;">
+          <img
+            src="https://images.pexels.com/photos/4497544/pexels-photo-4497544.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=400"
+            alt="Villa with pool"
+            class="w-full h-[140px] md:h-[180px] object-cover"
+            loading="lazy"
+          />
+        </div>
+        <!-- Bronze corner accent -->
+        <div class="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-[#725b2f]"></div>
+        <div class="absolute -bottom-16 -right-4 md:-right-14 w-16 h-16 border-b-2 border-r-2 border-[#725b2f]" style="z-index:5;"></div>
+      </div>
+
+      <!-- Text -->
+      <div class="mt-12 lg:mt-0">
+        <span class="section-label">Our Philosophy</span>
+        <div class="bronze-rule mt-3 mb-5"></div>
+        <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2] mb-6" style="font-size: clamp(26px, 3vw, 40px);">
+          Thirty Years of Discretion,<br />
+          <em class="font-normal text-[#725b2f]">One Standard of Excellence</em>
+        </h2>
+
+        <p class="font-body text-[#444748] text-[16px] leading-[1.75] mb-5">
+          Mayfair Properties & Developers was founded in 1997 by a family of seasoned architects and property lawyers with one singular conviction — that India's most distinguished homes deserved an equally distinguished custodian.
+        </p>
+        <p class="font-body text-[#444748] text-[16px] leading-[1.75] mb-8">
+          Over three decades, we have built an unrivalled proprietary network of off-market opportunities, seller relationships, and institutional knowledge spanning every premier micro-market in India. We do not list properties. We curate legacies.
+        </p>
+
+        <!-- USPs -->
+        <div class="space-y-5 mb-10">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#fdf9f0] border border-[#e1c28e] flex items-center justify-center flex-shrink-0 mt-0.5" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">lock</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[15px] mb-1">Absolute Confidentiality</div>
+              <div class="font-body text-[#444748] text-[14px] leading-relaxed">Every client and transaction is held under strict NDA. We have never published a client's name.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#fdf9f0] border border-[#e1c28e] flex items-center justify-center flex-shrink-0 mt-0.5" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">hub</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[15px] mb-1">Off-Market Access</div>
+              <div class="font-body text-[#444748] text-[14px] leading-relaxed">Over 68% of our transactions are completed before a property ever reaches the open market.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#fdf9f0] border border-[#e1c28e] flex items-center justify-center flex-shrink-0 mt-0.5" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">gavel</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[15px] mb-1">Full Legal Due Diligence</div>
+              <div class="font-body text-[#444748] text-[14px] leading-relaxed">In-house team of property lawyers ensures every title is absolutely clear before you sign.</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">
+          Speak with a Senior Advisor
+          <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     KEY NUMBERS
+═══════════════════════════════════════════════ -->
+<section class="py-[70px] bg-[#1c1b1b]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
+
+      <div class="text-center md:text-left">
+        <div class="font-display text-[#e1c28e] font-semibold text-[42px] md:text-[52px] leading-none">₹48K</div>
+        <div class="stat-divider mx-auto md:mx-0"></div>
+        <div class="font-body text-[#858383] text-[12px] tracking-[0.1em] uppercase mt-1">Crore Transacted</div>
+      </div>
+
+      <div class="text-center md:text-left">
+        <div class="font-display text-[#e1c28e] font-semibold text-[42px] md:text-[52px] leading-none">2,400<span class="text-[28px]">+</span></div>
+        <div class="stat-divider mx-auto md:mx-0"></div>
+        <div class="font-body text-[#858383] text-[12px] tracking-[0.1em] uppercase mt-1">Homes Curated</div>
+      </div>
+
+      <div class="text-center md:text-left">
+        <div class="font-display text-[#e1c28e] font-semibold text-[42px] md:text-[52px] leading-none">12</div>
+        <div class="stat-divider mx-auto md:mx-0"></div>
+        <div class="font-body text-[#858383] text-[12px] tracking-[0.1em] uppercase mt-1">Cities Covered</div>
+      </div>
+
+      <div class="text-center md:text-left">
+        <div class="font-display text-[#e1c28e] font-semibold text-[42px] md:text-[52px] leading-none">27</div>
+        <div class="stat-divider mx-auto md:mx-0"></div>
+        <div class="font-body text-[#858383] text-[12px] tracking-[0.1em] uppercase mt-1">Years of Heritage</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════════ -->
+<section id="services" class="py-[80px] md:py-[100px] bg-[#fdf9f0]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+
+    <div class="max-w-[560px] mb-14">
+      <span class="section-label">What We Offer</span>
+      <div class="bronze-rule mt-3 mb-5"></div>
+      <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2]" style="font-size: clamp(26px, 3vw, 40px);">
+        A Complete Spectrum of<br />
+        <em class="font-normal text-[#725b2f]">Luxury Real Estate Services</em>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">search</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">Bespoke Property Acquisition</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">We identify, shortlist, and negotiate properties that precisely match your vision — including those never listed publicly.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">sell</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">Discreet Property Marketing</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">Leverage our curated buyer network of UHNIs, family offices, and NRIs. Maximum value, minimal public exposure.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">gavel</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">Legal & Title Due Diligence</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">Our in-house property law division conducts full title searches, encumbrance reviews, and RERA compliance checks.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">account_balance</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">Portfolio & Asset Management</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">Strategic portfolio advisory for UHNI families holding multi-city real estate assets. Yield optimisation and exit structuring.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">design_services</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">Interior Curation & Fit-Out</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">Concierge access to India's top architects and interior designers. End-to-end project management post-acquisition.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="service-card pt-7">
+        <div class="w-12 h-12 bg-[#f2ede4] flex items-center justify-center mb-5" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f]" style="font-size:24px">language</span>
+        </div>
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[19px] mb-3">NRI & International Acquisition</h3>
+        <p class="font-body text-[#444748] text-[14px] leading-[1.7]">Dedicated NRI desk with FEMA guidance, repatriation structuring, and end-to-end remote purchase facilitation.</p>
+        <a href="#contact" class="flex items-center gap-2 mt-6 font-body text-[#725b2f] text-[13px] font-semibold tracking-wide hover:gap-3 transition-all">
+          Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     LOCATIONS
+═══════════════════════════════════════════════ -->
+<section id="locations" class="py-[80px] md:py-[100px] bg-[#f7f3ea]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="section-label">Prime Locations</span>
+        <div class="bronze-rule mt-3 mb-5"></div>
+        <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2]" style="font-size: clamp(26px, 3vw, 40px);">
+          India's Most Coveted<br /><em class="font-normal text-[#725b2f]">Residential Addresses</em>
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Mumbai -->
+      <div class="relative overflow-hidden group cursor-pointer" style="border-radius:2px; height:380px;">
+        <img
+          src="https://images.pexels.com/photos/37853138/pexels-photo-37853138.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=560"
+          alt="Mumbai Skyline"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-7">
+          <div class="font-body text-[#e1c28e] text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Maharashtra</div>
+          <h3 class="font-display text-white font-semibold text-[26px] leading-tight mb-2">Mumbai</h3>
+          <p class="font-body text-[rgba(255,255,255,0.7)] text-[13px] leading-relaxed mb-4">Worli · Malabar Hill · Altamount Rd · Napean Sea Rd</p>
+          <a href="#contact" class="font-body text-[#e1c28e] text-[12px] font-semibold tracking-wide uppercase flex items-center gap-2 group-hover:gap-3 transition-all">
+            Explore <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+        <div class="absolute top-6 right-6 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm px-3 py-1.5 rounded-sm">
+          <span class="font-body text-white text-[11px] font-semibold tracking-wide">18 Active Listings</span>
+        </div>
+      </div>
+
+      <!-- Delhi -->
+      <div class="relative overflow-hidden group cursor-pointer" style="border-radius:2px; height:380px;">
+        <img
+          src="https://images.pexels.com/photos/8082328/pexels-photo-8082328.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=560"
+          alt="Delhi luxury estate"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-7">
+          <div class="font-body text-[#e1c28e] text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">NCR</div>
+          <h3 class="font-display text-white font-semibold text-[26px] leading-tight mb-2">Delhi</h3>
+          <p class="font-body text-[rgba(255,255,255,0.7)] text-[13px] leading-relaxed mb-4">Lutyens Zone · Golf Links · Jor Bagh · Prithviraj Rd</p>
+          <a href="#contact" class="font-body text-[#e1c28e] text-[12px] font-semibold tracking-wide uppercase flex items-center gap-2 group-hover:gap-3 transition-all">
+            Explore <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+        <div class="absolute top-6 right-6 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm px-3 py-1.5 rounded-sm">
+          <span class="font-body text-white text-[11px] font-semibold tracking-wide">11 Active Listings</span>
+        </div>
+      </div>
+
+      <!-- Bangalore -->
+      <div class="relative overflow-hidden group cursor-pointer" style="border-radius:2px; height:380px;">
+        <img
+          src="https://images.pexels.com/photos/8143683/pexels-photo-8143683.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=560"
+          alt="Bangalore luxury estate"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-7">
+          <div class="font-body text-[#e1c28e] text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Karnataka</div>
+          <h3 class="font-display text-white font-semibold text-[26px] leading-tight mb-2">Bangalore</h3>
+          <p class="font-body text-[rgba(255,255,255,0.7)] text-[13px] leading-relaxed mb-4">Sadashivanagar · Dollar Colony · Lavelle Rd</p>
+          <a href="#contact" class="font-body text-[#e1c28e] text-[12px] font-semibold tracking-wide uppercase flex items-center gap-2 group-hover:gap-3 transition-all">
+            Explore <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+        <div class="absolute top-6 right-6 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm px-3 py-1.5 rounded-sm">
+          <span class="font-body text-white text-[11px] font-semibold tracking-wide">9 Active Listings</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional cities row -->
+    <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white border border-[#e6e2d9] p-5 flex items-center justify-between group hover:border-[#e1c28e] transition-colors cursor-pointer" style="border-radius:2px;">
+        <div>
+          <div class="font-display text-[#1c1c16] font-semibold text-[16px]">Pune</div>
+          <div class="font-body text-[#725b2f] text-[11px] tracking-wide mt-1">7 Listings</div>
+        </div>
+        <span class="material-symbols-outlined text-[#c4c7c7] group-hover:text-[#725b2f] transition-colors" style="font-size:20px">arrow_forward</span>
+      </div>
+      <div class="bg-white border border-[#e6e2d9] p-5 flex items-center justify-between group hover:border-[#e1c28e] transition-colors cursor-pointer" style="border-radius:2px;">
+        <div>
+          <div class="font-display text-[#1c1c16] font-semibold text-[16px]">Hyderabad</div>
+          <div class="font-body text-[#725b2f] text-[11px] tracking-wide mt-1">8 Listings</div>
+        </div>
+        <span class="material-symbols-outlined text-[#c4c7c7] group-hover:text-[#725b2f] transition-colors" style="font-size:20px">arrow_forward</span>
+      </div>
+      <div class="bg-white border border-[#e6e2d9] p-5 flex items-center justify-between group hover:border-[#e1c28e] transition-colors cursor-pointer" style="border-radius:2px;">
+        <div>
+          <div class="font-display text-[#1c1c16] font-semibold text-[16px]">Kolkata</div>
+          <div class="font-body text-[#725b2f] text-[11px] tracking-wide mt-1">4 Listings</div>
+        </div>
+        <span class="material-symbols-outlined text-[#c4c7c7] group-hover:text-[#725b2f] transition-colors" style="font-size:20px">arrow_forward</span>
+      </div>
+      <div class="bg-white border border-[#e6e2d9] p-5 flex items-center justify-between group hover:border-[#e1c28e] transition-colors cursor-pointer" style="border-radius:2px;">
+        <div>
+          <div class="font-display text-[#1c1c16] font-semibold text-[16px]">Goa</div>
+          <div class="font-body text-[#725b2f] text-[11px] tracking-wide mt-1">5 Listings</div>
+        </div>
+        <span class="material-symbols-outlined text-[#c4c7c7] group-hover:text-[#725b2f] transition-colors" style="font-size:20px">arrow_forward</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════ -->
+<section class="py-[80px] md:py-[100px] bg-[#fdf9f0]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+
+    <div class="max-w-[480px] mb-14">
+      <span class="section-label">Client Voices</span>
+      <div class="bronze-rule mt-3 mb-5"></div>
+      <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2]" style="font-size: clamp(24px, 2.8vw, 36px);">
+        Trusted by India's<br /><em class="font-normal text-[#725b2f]">Most Discerning Families</em>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <div class="testimonial-card p-8">
+        <div class="flex gap-1 mb-5">
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-display text-[#1c1c16] text-[16px] italic leading-[1.8] mb-6">
+          "Mayfair found us a Worli penthouse we didn't even know existed. The process was seamless, completely discreet, and the negotiation saved us over ₹14 crore. Unmatched."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 bg-[#e6e2d9] flex items-center justify-center" style="border-radius:0.75rem;">
+            <span class="font-display text-[#725b2f] font-semibold text-[16px]">RS</span>
+          </div>
+          <div>
+            <div class="font-body text-[#1c1c16] font-semibold text-[14px]">R. Singhania</div>
+            <div class="font-body text-[#725b2f] text-[12px] tracking-wide">Business Family, Mumbai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card p-8">
+        <div class="flex gap-1 mb-5">
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-display text-[#1c1c16] text-[16px] italic leading-[1.8] mb-6">
+          "As an NRI, I was nervous about purchasing property remotely in India. Mayfair's team handled everything — title, legal, interiors — without a single visit until the keys handover."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 bg-[#e6e2d9] flex items-center justify-center" style="border-radius:0.75rem;">
+            <span class="font-display text-[#725b2f] font-semibold text-[16px]">AN</span>
+          </div>
+          <div>
+            <div class="font-body text-[#1c1c16] font-semibold text-[14px]">A. Nair</div>
+            <div class="font-body text-[#725b2f] text-[12px] tracking-wide">NRI Client, Singapore</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card p-8">
+        <div class="flex gap-1 mb-5">
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[#e1c28e]" style="font-size:18px; font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <p class="font-display text-[#1c1c16] text-[16px] italic leading-[1.8] mb-6">
+          "We sold our Lutyens bungalow through Mayfair with zero press leaks. They found the right buyer within 6 weeks at a price that exceeded our expectations by a significant margin."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 bg-[#e6e2d9] flex items-center justify-center" style="border-radius:0.75rem;">
+            <span class="font-display text-[#725b2f] font-semibold text-[16px]">VK</span>
+          </div>
+          <div>
+            <div class="font-body text-[#1c1c16] font-semibold text-[14px]">V. Kapoor</div>
+            <div class="font-body text-[#725b2f] text-[12px] tracking-wide">Industrialist Family, Delhi</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     INSIGHTS / ARTICLES
+═══════════════════════════════════════════════ -->
+<section id="insights" class="py-[80px] md:py-[100px] bg-[#f7f3ea]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="section-label">Market Intelligence</span>
+        <div class="bronze-rule mt-3 mb-5"></div>
+        <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2]" style="font-size: clamp(26px, 3vw, 40px);">
+          Mayfair<br /><em class="font-normal text-[#725b2f]">Insights & Reports</em>
+        </h2>
+      </div>
+      <a href="#" class="btn-outline flex-shrink-0 self-start">
+        All Articles
+        <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+      <div class="bg-white border border-[#e6e2d9] overflow-hidden group cursor-pointer" style="border-radius:2px;">
+        <div class="overflow-hidden h-[200px]">
+          <img
+            src="https://images.pexels.com/photos/7174113/pexels-photo-7174113.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600"
+            alt="Luxury market insight"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-7">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="city-tag">Report</span>
+            <span class="font-body text-[#747878] text-[12px]">Dec 2024</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[17px] leading-tight mb-3 group-hover:text-[#725b2f] transition-colors">South Mumbai's Ultra-Luxury Market: 2024 Review & 2025 Outlook</h3>
+          <p class="font-body text-[#444748] text-[13px] leading-relaxed mb-5">Record transactions on Altamount Road and Napean Sea Road signal continued resilience in India's most prestigious micro-market.</p>
+          <a href="#" class="flex items-center gap-2 font-body text-[#725b2f] text-[12px] font-semibold tracking-wide uppercase">
+            Read Report <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e6e2d9] overflow-hidden group cursor-pointer" style="border-radius:2px;">
+        <div class="overflow-hidden h-[200px]">
+          <img
+            src="https://images.pexels.com/photos/7546323/pexels-photo-7546323.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600"
+            alt="NRI investment insight"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-7">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="city-tag">NRI Guide</span>
+            <span class="font-body text-[#747878] text-[12px]">Nov 2024</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[17px] leading-tight mb-3 group-hover:text-[#725b2f] transition-colors">A Complete NRI Guide to Buying High-Value Property in India</h3>
+          <p class="font-body text-[#444748] text-[13px] leading-relaxed mb-5">FEMA regulations, repatriation of funds, and remote acquisition strategies for non-resident Indians seeking premium homes.</p>
+          <a href="#" class="flex items-center gap-2 font-body text-[#725b2f] text-[12px] font-semibold tracking-wide uppercase">
+            Read Guide <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e6e2d9] overflow-hidden group cursor-pointer" style="border-radius:2px;">
+        <div class="overflow-hidden h-[200px]">
+          <img
+            src="https://images.pexels.com/photos/34538288/pexels-photo-34538288.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600"
+            alt="Lutyens market analysis"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-7">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="city-tag">Analysis</span>
+            <span class="font-body text-[#747878] text-[12px]">Oct 2024</span>
+          </div>
+          <h3 class="font-display text-[#1c1c16] font-semibold text-[17px] leading-tight mb-3 group-hover:text-[#725b2f] transition-colors">Why Lutyens' Delhi Bungalows Remain India's Most Coveted Asset Class</h3>
+          <p class="font-body text-[#444748] text-[13px] leading-relaxed mb-5">Supply-constrained and demand-fuelled — an in-depth analysis of one of the world's most exclusive residential markets.</p>
+          <a href="#" class="flex items-center gap-2 font-body text-[#725b2f] text-[12px] font-semibold tracking-wide uppercase">
+            Read Analysis <span class="material-symbols-outlined" style="font-size:15px">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CTA BAND
+═══════════════════════════════════════════════ -->
+<section class="relative py-[80px] md:py-[110px] overflow-hidden">
+  <img
+    src="https://images.pexels.com/photos/6957093/pexels-photo-6957093.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=1600"
+    alt="Luxury interior"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    loading="lazy"
+  />
+  <div class="absolute inset-0 bg-[#1c1b1b]/88"></div>
+  <div class="relative z-10 max-w-[1280px] mx-auto px-5 md:px-10 text-center">
+    <div class="inline-flex items-center gap-3 mb-6">
+      <div class="w-8 h-[1px] bg-[#e1c28e]"></div>
+      <span class="font-body text-[11px] font-semibold tracking-[0.2em] uppercase text-[#e1c28e]">Private Consultation</span>
+      <div class="w-8 h-[1px] bg-[#e1c28e]"></div>
+    </div>
+    <h2 class="font-display text-white font-semibold leading-[1.15] mb-6 max-w-[700px] mx-auto" style="font-size: clamp(28px, 4vw, 52px);">
+      Your Dream Home Is<br /><em class="font-normal text-[#e1c28e]">Already in Our Portfolio</em>
+    </h2>
+    <p class="font-body text-[rgba(255,255,255,0.65)] text-[16px] max-w-[520px] mx-auto leading-[1.75] mb-10">
+      Speak with one of our senior advisors today. No obligation. Complete confidentiality. Access to properties never advertised publicly.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="btn-primary" style="padding:16px 40px; font-size:14px;">
+        Begin Your Search
+        <span class="material-symbols-outlined" style="font-size:18px">arrow_forward</span>
+      </a>
+      <a href="tel:+912268880000" class="btn-outline-white" style="padding:15px 40px; font-size:14px;">
+        <span class="material-symbols-outlined" style="font-size:18px">call</span>
+        +91 22 6888 0000
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT FORM
+═══════════════════════════════════════════════ -->
+<section id="contact" class="py-[80px] md:py-[100px] bg-[#fdf9f0]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+      <!-- Left -->
+      <div>
+        <span class="section-label">Get in Touch</span>
+        <div class="bronze-rule mt-3 mb-5"></div>
+        <h2 class="font-display text-[#1c1c16] font-semibold leading-[1.2] mb-6" style="font-size: clamp(26px, 3vw, 40px);">
+          Schedule a<br /><em class="font-normal text-[#725b2f]">Private Consultation</em>
+        </h2>
+        <p class="font-body text-[#444748] text-[16px] leading-[1.75] mb-10">
+          Our senior advisors are available for in-person meetings at our offices in Mumbai, Delhi, and Bangalore — or virtually for our NRI clients globally. All enquiries are handled with absolute discretion.
+        </p>
+
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#f2ede4] border border-[#e6e2d9] flex items-center justify-center flex-shrink-0" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">location_on</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[14px] mb-1">Head Office — Mumbai</div>
+              <div class="font-body text-[#444748] text-[14px] leading-relaxed">Mayfair House, 14th Floor, Nariman Point<br />Mumbai — 400 021, Maharashtra</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#f2ede4] border border-[#e6e2d9] flex items-center justify-center flex-shrink-0" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">call</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[14px] mb-1">Direct Line</div>
+              <a href="tel:+912268880000" class="font-body text-[#725b2f] text-[14px] hover:underline">+91 22 6888 0000</a><br />
+              <a href="tel:+911146810000" class="font-body text-[#725b2f] text-[14px] hover:underline">+91 11 4681 0000 (Delhi)</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#f2ede4] border border-[#e6e2d9] flex items-center justify-center flex-shrink-0" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">mail</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[14px] mb-1">Email</div>
+              <a href="mailto:acquisitions@mayfairproperties.in" class="font-body text-[#725b2f] text-[14px] hover:underline">acquisitions@mayfairproperties.in</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-[#f2ede4] border border-[#e6e2d9] flex items-center justify-center flex-shrink-0" style="border-radius:2px;">
+              <span class="material-symbols-outlined text-[#725b2f]" style="font-size:18px">schedule</span>
+            </div>
+            <div>
+              <div class="font-body text-[#1c1c16] font-semibold text-[14px] mb-1">Office Hours</div>
+              <div class="font-body text-[#444748] text-[14px]">Mon – Sat: 9:30 AM – 7:00 PM IST<br />Private viewings by appointment only</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — Form -->
+      <div class="bg-white border border-[#e6e2d9] p-8 md:p-10" style="border-radius:2px;">
+        <h3 class="font-display text-[#1c1c16] font-semibold text-[20px] mb-7">Send an Enquiry</h3>
+        <form onsubmit="handleFormSubmit(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Full Name *</label>
+              <input type="text" required placeholder="Your full name" class="form-input" />
+            </div>
+            <div>
+              <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Phone *</label>
+              <input type="tel" required placeholder="+91 98765 43210" class="form-input" />
+            </div>
+          </div>
+          <div>
+            <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Email Address *</label>
+            <input type="email" required placeholder="your@email.com" class="form-input" />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Preferred City</label>
+              <div class="relative">
+                <select class="form-select">
+                  <option value="">Select City</option>
+                  <option>Mumbai</option>
+                  <option>Delhi NCR</option>
+                  <option>Bangalore</option>
+                  <option>Pune</option>
+                  <option>Hyderabad</option>
+                  <option>Goa</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Budget</label>
+              <div class="relative">
+                <select class="form-select">
+                  <option value="">Select Range</option>
+                  <option>₹5 – 15 Cr</option>
+                  <option>₹15 – 50 Cr</option>
+                  <option>₹50 – 150 Cr</option>
+                  <option>₹150 Cr+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Enquiry Type</label>
+            <div class="relative">
+              <select class="form-select">
+                <option>Buy a Property</option>
+                <option>Sell a Property</option>
+                <option>Portfolio Advisory</option>
+                <option>NRI Acquisition</option>
+                <option>Market Research</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="font-body text-[11px] font-semibold tracking-[0.12em] uppercase text-[#444748] block mb-2">Message</label>
+            <textarea rows="4" placeholder="Tell us about your requirements..." class="form-input resize-none"></textarea>
+          </div>
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="nda" class="mt-1 accent-[#725b2f] cursor-pointer" />
+            <label for="nda" class="font-body text-[#444748] text-[13px] leading-relaxed cursor-pointer">I understand all enquiries are held under strict confidentiality and I consent to being contacted by a Mayfair advisor.</label>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center" style="padding:16px 32px; font-size:14px;">
+            Submit Enquiry
+            <span class="material-symbols-outlined" style="font-size:18px">send</span>
+          </button>
+        </form>
+        <div id="form-success" class="hidden mt-6 p-5 bg-[#f7f3ea] border border-[#e1c28e] text-center" style="border-radius:2px;">
+          <span class="material-symbols-outlined text-[#725b2f] text-[32px] block mb-2">check_circle</span>
+          <div class="font-display text-[#1c1c16] font-semibold text-[16px] mb-1">Enquiry Received</div>
+          <div class="font-body text-[#444748] text-[14px]">A senior Mayfair advisor will contact you within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="bg-[#1c1b1b] text-[#858383]">
+
+  <!-- Main Footer -->
+  <div class="max-w-[1280px] mx-auto px-5 md:px-10 py-16 md:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- Brand Col -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-[36px] h-[36px] bg-[#2e2d2d] border border-[#3a3939] flex items-center justify-center" style="border-radius:2px;">
+            <span class="font-display text-[#e1c28e] font-semibold text-[15px] leading-none">M</span>
+          </div>
+          <div>
+            <div class="font-display text-[#e6e2d9] font-semibold text-[15px] leading-tight tracking-wide">Mayfair</div>
+            <div class="font-body text-[#725b2f] font-semibold text-[9px] tracking-[0.18em] uppercase leading-none">Properties & Developers</div>
+          </div>
+        </div>
+        <p class="font-body text-[#858383] text-[14px] leading-[1.75] mb-6">
+          India's premier ultra-luxury real estate firm. Curating extraordinary homes since 1997.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 bg-[#2e2d2d] border border-[#3a3939] flex items-center justify-center hover:border-[#725b2f] hover:text-[#e1c28e] transition-colors" style="border-radius:2px;">
+            <span class="material-symbols-outlined" style="font-size:16px">language</span>
+          </a>
+          <a href="#" class="w-9 h-9 bg-[#2e2d2d] border border-[#3a3939] flex items-center justify-center hover:border-[#725b2f] hover:text-[#e1c28e] transition-colors" style="border-radius:2px;">
+            <span class="material-symbols-outlined" style="font-size:16px">play_arrow</span>
+          </a>
+          <a href="#" class="w-9 h-9 bg-[#2e2d2d] border border-[#3a3939] flex items-center justify-center hover:border-[#725b2f] hover:text-[#e1c28e] transition-colors" style="border-radius:2px;">
+            <span class="material-symbols-outlined" style="font-size:16px">photo_camera</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Portfolio Links -->
+      <div>
+        <h4 class="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-[#e6e2d9] mb-6">Portfolio</h4>
+        <ul class="space-y-3">
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Featured Listings</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Off-Market Opportunities</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">New Developments</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Heritage Properties</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Golf & Leisure Estates</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Waterfront Residences</a></li>
+        </ul>
+      </div>
+
+      <!-- Services Links -->
+      <div>
+        <h4 class="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-[#e6e2d9] mb-6">Services</h4>
+        <ul class="space-y-3">
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Acquisition Advisory</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Discreet Sales</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Legal Due Diligence</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">NRI Desk</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Portfolio Management</a></li>
+          <li><a href="#" class="font-body text-[14px] text-[#858383] hover:text-[#e1c28e] transition-colors">Interior Curation</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h4 class="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-[#e6e2d9] mb-6">Market Intelligence</h4>
+        <p class="font-body text-[14px] text-[#858383] leading-[1.7] mb-5">
+          Subscribe for quarterly reports, off-market alerts, and exclusive market insights — delivered to your inbox.
+        </p>
+        <form onsubmit="handleNewsletterSubmit(event)" class="flex gap-0">
+          <input type="email" placeholder="Your email address" id="newsletter-email"
+            class="flex-1 bg-[#252424] border border-[#3a3939] text-[#e6e2d9] px-4 py-3 font-body text-[13px] outline-none focus:border-[#725b2f] transition-colors"
+            style="border-radius:2px 0 0 2px;" />
+          <button type="submit" class="bg-[#725b2f] border border-[#725b2f] text-white px-4 py-3 hover:bg-[#5c481f] transition-colors flex-shrink-0" style="border-radius:0 2px 2px 0;">
+            <span class="material-symbols-outlined" style="font-size:18px">arrow_forward</span>
+          </button>
+        </form>
+        <p id="newsletter-success" class="hidden font-body text-[#e1c28e] text-[12px] mt-3">✓ Thank you — you're now subscribed.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="border-t border-[#2e2d2d]">
+    <div class="max-w-[1280px] mx-auto px-5 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="font-body text-[12px] text-[#555352] text-center md:text-left">
+        © 2024 Mayfair Properties & Developers Pvt. Ltd. All rights reserved. RERA Reg. No. P51800047631 (MH)
+      </div>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#" class="font-body text-[12px] text-[#555352] hover:text-[#858383] transition-colors">Privacy Policy</a>
+        <a href="#" class="font-body text-[12px] text-[#555352] hover:text-[#858383] transition-colors">Terms of Use</a>
+        <a href="#" class="font-body text-[12px] text-[#555352] hover:text-[#858383] transition-colors">RERA Compliance</a>
+        <a href="#" class="font-body text-[12px] text-[#555352] hover:text-[#858383] transition-colors">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════ -->
+<script>
+  // ── Mobile Menu ──
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+  }
+
+  // ── Contact Form ──
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    form.style.display = 'none';
+    document.getElementById('form-success').classList.remove('hidden');
+  }
+
+  // ── Newsletter ──
+  function handleNewsletterSubmit(e) {
+    e.preventDefault();
+    document.getElementById('newsletter-email').value = '';
+    document.getElementById('newsletter-success').classList.remove('hidden');
+  }
+
+  // ── Smooth Scroll ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ── Sticky Nav Shadow on Scroll ──
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('main-nav');
+    if (window.scrollY > 60) {
+      nav.style.boxShadow = '0 4px 24px rgba(0,0,0,0.08)';
+    } else {
+      nav.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
