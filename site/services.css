@@ -1,0 +1,83 @@
+/* Services page only — tokens inherit from home-prod.css (kit-6). */
+
+.page-hero {
+  padding: 72px 0 56px;
+  border-bottom: 1px solid var(--line);
+}
+.page-hero h1 {
+  font-size: clamp(34px, 4.6vw, 56px);
+  max-width: 16ch;
+  margin: 8px 0 18px;
+}
+.page-hero .support {
+  font-size: 17px;
+  color: var(--text);
+  max-width: 52ch;
+  line-height: 1.7;
+}
+
+.who { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 48px; }
+.who article h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.who article p { color: var(--text); max-width: 46ch; }
+
+.svc {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+.svc .n {
+  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--accent);
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+.svc h2 { font-size: clamp(26px, 3vw, 38px); max-width: 18ch; margin-bottom: 14px; }
+.svc .lead { color: var(--text); max-width: 58ch; margin-bottom: 14px; }
+.svc ul {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 58ch;
+}
+.svc li {
+  position: relative;
+  padding: 8px 0 8px 18px;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+}
+.svc li:last-child { border-bottom: 1px solid var(--line); }
+.svc li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 8px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 28px;
+}
+.jump a {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+.jump a:hover { color: var(--bronze); border-color: var(--bronze); }
+
+@media (max-width: 1024px) {
+  .who { grid-template-columns: 1fr; }
+  .page-hero { padding: 48px 0 36px; }
+}

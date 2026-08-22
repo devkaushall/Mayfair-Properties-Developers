@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mayfair Properties &amp; Developers | Real Estate Advisor in Gurugram</title>
+  <meta name="description" content="Navigate Gurugram real estate with clear advice, verified property opportunities and local market expertise from Mayfair Properties &amp; Developers." />
+  <link rel="stylesheet" href="home-prod.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="util">
+  <div class="util-inner">
+    <span class="util-left">Gurugram real estate · Buyers, sellers &amp; investors</span>
+    <span><a href="tel:+919873712902">+91 98737 12902</a> &nbsp;·&nbsp; Mon–Sun 10:00–18:00</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="https://mayfairpropertiesdevelopers.com/" aria-label="Mayfair Properties &amp; Developers home">
+      <img src="img/logo-light.webp" alt="Mayfair Properties &amp; Developers" />
+    </a>
+    <nav class="nav-d" aria-label="Primary">
+      <a href="homepage.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="properties.html">Properties</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-consult" href="consult.html">Consult</a>
+      <a class="btn btn-bronze" href="tel:+919873712902">Call now</a>
+      <button class="ham" id="ham" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="properties.html">Properties</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact us</a>
+  </nav>
+</aside>
+
+<main id="main">
+
+  <!-- 01 HERO — static -->
+  <section class="hero" aria-label="Introduction">
+    <img class="bg" src="img/hero-editorial.jpg" alt="Contemporary mid-rise residential building on a quiet Gurugram street" width="1600" height="900" />
+    <div class="shade" aria-hidden="true"></div>
+    <div class="hero-panel">
+      <p class="eyebrow">Gurugram real estate advisory</p>
+      <h1>Find the Right Property. Make the Right Decision.</h1>
+      <p class="support">Mayfair helps buyers, sellers and investors navigate Gurugram real estate through local knowledge, transparent guidance and long-term thinking.</p>
+      <div class="btn-row">
+        <a class="btn btn-ink" href="https://mayfairpropertiesdevelopers.com/properties/">Explore Properties</a>
+        <a class="btn btn-line" href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Speak With an Advisor</a>
+      </div>
+      <p class="micro">You are not here to be sold a property. You are here to make a property decision with better information.</p>
+    </div>
+  </section>
+
+  <!-- 02 MAYFAIR APPROACH — static -->
+  <section class="approach" aria-labelledby="approach-title">
+    <div class="approach-grid">
+      <div class="approach-visual">
+        <img src="img/material-detail.jpg" alt="Concrete, brick and jaali screen on a Gurugram building" width="900" height="900" />
+      </div>
+      <div class="approach-copy">
+        <p class="eyebrow">The Mayfair approach</p>
+        <h2 id="approach-title">A property decision deserves more than a sales pitch.</h2>
+        <p class="lede">Buying, selling or investing is rarely a short-term decision. The right choice depends on more than a brochure, a price or a location pin.</p>
+        <p class="belief">We look at suitability first — and we will say so when a property is not the right one.</p>
+        <div class="principles">
+          <div class="pr">
+            <span class="n">01</span>
+            <div>
+              <h3>Local knowledge</h3>
+              <p>Gurugram is not one market. We read corridors, neighbourhoods and daily access — not slogans.</p>
+            </div>
+          </div>
+          <div class="pr">
+            <span class="n">02</span>
+            <div>
+              <h3>Transparent guidance</h3>
+              <p>What we know, what we don’t, and what you should verify before you commit.</p>
+            </div>
+          </div>
+          <div class="pr">
+            <span class="n">03</span>
+            <div>
+              <h3>Suitability first</h3>
+              <p>A file can look right on paper and still be wrong for how you live, work or invest.</p>
+            </div>
+          </div>
+          <div class="pr">
+            <span class="n">04</span>
+            <div>
+              <h3>Long-term thinking</h3>
+              <p>Use, hold period and exit — not only the asking price.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 FEATURED PROPERTIES — dynamic: CPT property + Loop Grid + ACF -->
+  <!--
+    Elementor: Loop Grid → query post_type=property, posts_per_page=3, mpd_featured if used.
+    Card fields: featured image, title, taxonomy location, taxonomy property-type,
+    mpd_bedrooms, mpd_area_sqft, mpd_price, mpd_price_label, mpd_verified, permalink.
+    If query empty: hide grid, show .vacant below.
+    Do not hard-code listings.
+  -->
+  <section class="block tint" id="properties" aria-labelledby="properties-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Featured properties</p>
+        <h2 id="properties-title">Properties worth taking a closer look at.</h2>
+        <p class="sec-kicker">A shortlist, not a catalogue. Three curated listings when the file is ready — image, name, location, type, configuration, area, price and verification. Nothing invented to fill the row.</p>
+      </div>
+
+      <div class="vacant" role="status">
+        <figure>
+          <img src="img/consult-facade.jpg" alt="" width="900" height="700" />
+        </figure>
+        <div class="vacant-copy">
+          <h3>We’re currently updating our property portfolio.</h3>
+          <p>Tell us what you’re looking for and our advisory team can help identify suitable options across Gurugram.</p>
+          <div class="btn-row">
+            <a class="btn btn-ink" href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Discuss your requirement</a>
+            <a class="btn btn-line" href="tel:+919873712902">Call Mayfair</a>
+          </div>
+        </div>
+      </div>
+      <p class="spec-note">How a listing will read when published — labels only, not a property for sale.</p>
+      <div class="cards" aria-hidden="true">
+        <article class="prop-card is-spec">
+          <img src="img/hero-editorial.jpg" alt="" width="680" height="440" />
+          <div>
+            <p class="card-kicker">Property <span class="badge">Verified when available</span></p>
+            <h3>Property name</h3>
+            <p class="card-loc">Location</p>
+            <p class="card-line">Type · Configuration · Area · Status</p>
+            <dl class="facts">
+              <div><dt>Config</dt><dd>—</dd></div>
+              <div><dt>Area</dt><dd>—</dd></div>
+              <div><dt>Status</dt><dd>—</dd></div>
+            </dl>
+            <p class="price">₹ — <span>Price label</span></p>
+            <span class="card-go">View Property</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 SERVICES — static directory -->
+  <section class="block" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How we can help</p>
+        <h2 id="services-title">Advice built around the problem you actually have.</h2>
+        <p class="sec-kicker">Each path starts with the situation, not a product push.</p>
+      </div>
+      <div class="ways" aria-label="Site pathways">
+        <div>
+          <p>Find a property</p>
+          <a href="https://mayfairpropertiesdevelopers.com/residential/">Residential</a>
+          <a href="https://mayfairpropertiesdevelopers.com/commercial/">Commercial</a>
+          <a href="https://mayfairpropertiesdevelopers.com/project/">Projects</a>
+        </div>
+        <div>
+          <p>Need advice</p>
+          <a href="https://mayfairpropertiesdevelopers.com/buy-property/">Buy</a>
+          <a href="https://mayfairpropertiesdevelopers.com/sell-property/">Sell</a>
+          <a href="https://mayfairpropertiesdevelopers.com/want-to-invest-in-property/">Invest</a>
+          <a href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Consult</a>
+        </div>
+        <div>
+          <p>Understand the market</p>
+          <a href="#gurugram">Gurugram</a>
+          <a href="https://mayfairpropertiesdevelopers.com/insights-2/">Insights</a>
+        </div>
+      </div>
+      <nav class="dir" aria-label="Services">
+        <a href="https://mayfairpropertiesdevelopers.com/buy-property/">
+          <span class="n">01</span>
+          <h3>Buy</h3>
+          <div class="copy">
+            <p>The internet is full of listings. The harder part is knowing which file is suitable — and which one is not.</p>
+            <p>We help you shortlist Gurugram property against location, configuration, budget and use, then walk the documentation before you commit.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+        <a href="https://mayfairpropertiesdevelopers.com/sell-property/">
+          <span class="n">02</span>
+          <h3>Sell / Valuation</h3>
+          <div class="copy">
+            <p>A high asking price is not the same as a market that will pay it.</p>
+            <p>We help you understand where the property sits, who the likely buyer is, and how to take it to market without noise.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+        <a href="https://mayfairpropertiesdevelopers.com/want-to-invest-in-property/">
+          <span class="n">03</span>
+          <h3>Invest</h3>
+          <div class="copy">
+            <p>A yield slide and a location pin do not describe hold period, occupancy or exit.</p>
+            <p>We look at residential and commercial opportunities through use, risk, paperwork and time — not slogans.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+        <a href="https://mayfairpropertiesdevelopers.com/commercial/">
+          <span class="n">04</span>
+          <h3>Commercial</h3>
+          <div class="copy">
+            <p>Office, retail and mixed-use decisions turn on access, occupancy and lease terms that a brochure rarely explains.</p>
+            <p>We help occupiers and investors read the file, the location and the numbers together.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+        <a href="https://mayfairpropertiesdevelopers.com/consult-with-us/">
+          <span class="n">05</span>
+          <h3>NRI Advisory</h3>
+          <div class="copy">
+            <p>Distance makes verification slower. You need clear local reporting, not a faster pitch.</p>
+            <p>We represent your requirement on the ground and keep the communication plain.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+        <a href="https://mayfairpropertiesdevelopers.com/consult-with-us/">
+          <span class="n">06</span>
+          <h3>Consultation</h3>
+          <div class="copy">
+            <p>Sometimes the next step is not a shortlist. It is a conversation about what you are actually trying to do.</p>
+            <p>Bring the situation as it is — buy, sell, hold or wait. We will tell you if we can help.</p>
+          </div>
+          <span class="go">View</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- 05 WHY MAYFAIR — static editorial -->
+  <section class="why" aria-labelledby="why-title">
+    <div class="why-grid">
+      <div class="why-copy">
+        <p class="eyebrow light">The Mayfair perspective</p>
+        <h2 id="why-title">A property can look right on paper and still be wrong for you.</h2>
+        <p>A brochure can show the view. A price can show the number. A location pin can show the map. None of them tells you whether the decision fits how you live, work or invest.</p>
+        <p class="last">The difference is not louder marketing. A good advisor should know when to recommend a property — and have the integrity to tell you when to walk away.</p>
+        <a class="btn btn-ghost" href="https://mayfairpropertiesdevelopers.com/about-us/">Our approach</a>
+      </div>
+      <div class="why-visual">
+        <img src="img/why-interior.jpg" alt="Quiet apartment interior with morning light, Gurugram" width="900" height="700" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 FEATURED PROJECTS — dynamic: CPT project + Loop Grid + ACF -->
+  <!--
+    Elementor: Loop Grid → post_type=project, 2–3 items.
+    Fields: image, title, location, mpd_developer_name, project-type,
+    mpd_min_price, mpd_max_price, mpd_possession_date, mpd_rera_number (hide if empty).
+    Never invent RERA, possession, prices or developer claims.
+  -->
+  <section class="block tint" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Featured projects</p>
+        <h2 id="projects-title">Developments shaping Gurugram.</h2>
+        <p class="sec-kicker">Two or three notes, more editorial than a listing. Name, location, developer, type, price range, possession and RERA — only when those fields exist.</p>
+      </div>
+      <div class="vacant" role="status">
+        <figure>
+          <img src="img/hero-editorial.jpg" alt="" width="900" height="700" />
+        </figure>
+        <div class="vacant-copy">
+          <h3>New developments are currently being reviewed.</h3>
+          <p>When a project is ready to share, it will appear here. We will not invent RERA numbers, possession dates or prices to fill the page.</p>
+          <div class="btn-row">
+            <a class="btn btn-ink" href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Speak with an advisor</a>
+            <a class="btn btn-line" href="https://mayfairpropertiesdevelopers.com/project/">View projects</a>
+          </div>
+        </div>
+      </div>
+      <p class="spec-note">How a project will read when published — labels only.</p>
+      <div class="cards" aria-hidden="true">
+        <article class="proj-card is-spec">
+          <img src="img/consult-facade.jpg" alt="" width="680" height="440" />
+          <div>
+            <p class="card-kicker">Project</p>
+            <h3>Project name</h3>
+            <p class="card-loc">Location · Developer</p>
+            <p class="card-line">Project type</p>
+            <dl class="facts">
+              <div><dt>Price range</dt><dd>—</dd></div>
+              <div><dt>Possession</dt><dd>—</dd></div>
+              <div><dt>RERA</dt><dd>When available</dd></div>
+            </dl>
+            <span class="card-go">View Project</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 GURUGRAM — static / taxonomy-ready -->
+  <section class="block" id="gurugram" aria-labelledby="guru-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Gurugram</p>
+        <h2 id="guru-title">One city. Different markets.</h2>
+        <p class="sec-kicker">Gurugram is not a single real estate market. Each corridor has its own product mix, infrastructure story and daily life. We read them as they are.</p>
+      </div>
+      <div class="guru-grid">
+        <div class="guru-visual">
+          <img src="img/gurugram-street.jpg" alt="Tree-lined arterial road in Gurugram on an overcast day" width="1000" height="700" />
+        </div>
+        <div>
+          <div class="markets">
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>Golf Course Road</strong>
+              <em>An established residential and commercial spine. Product and pricing change street by street.</em>
+              <span>Explore</span>
+            </a>
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>Golf Course Extension</strong>
+              <em>A mixed corridor of apartments, floors and commercial. Suitability depends on commute, product type and timeline.</em>
+              <span>Explore</span>
+            </a>
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>Dwarka Expressway</strong>
+              <em>Infrastructure has opened new supply. Completion stage and daily access still need to be read file by file.</em>
+              <span>Explore</span>
+            </a>
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>Southern Peripheral Road</strong>
+              <em>Connects south Gurugram clusters. Treat each locality on its own terms.</em>
+              <span>Explore</span>
+            </a>
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>New Gurugram</strong>
+              <em>Planned sectors with a wide range of product. Social infrastructure and occupancy vary.</em>
+              <span>Explore</span>
+            </a>
+            <a class="mk" href="https://mayfairpropertiesdevelopers.com/properties/">
+              <strong>Sohna Road</strong>
+              <em>South Gurugram’s older and newer pockets sit side by side. Read each one separately.</em>
+              <span>Explore</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 MARKET INSIGHTS — dynamic: CPT insight + Loop Grid -->
+  <!--
+    Elementor: Loop Grid → post_type=insight, latest 3.
+    Fields: image, title, excerpt, insight-topic, mpi_reading_time, permalink.
+    Real published content only.
+  -->
+  <section class="block tint" id="insights" aria-labelledby="insights-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Market insights</p>
+        <h2 id="insights-title">Know the market before you buy into it.</h2>
+        <p class="sec-kicker">The latest three notes — buying, micro-markets, valuation, regulations, location. Written to help you decide, not to fill a blog.</p>
+      </div>
+      <div class="vacant" role="status">
+        <figure>
+          <img src="img/material-detail.jpg" alt="" width="900" height="700" />
+        </figure>
+        <div class="vacant-copy">
+          <h3>Market insights are being prepared.</h3>
+          <p>When published, this space will carry practical guides and local perspectives.</p>
+          <div class="btn-row">
+            <a class="btn btn-ink" href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Speak with an advisor</a>
+            <a class="btn btn-line" href="https://mayfairpropertiesdevelopers.com/insights-2/">Visit insights</a>
+          </div>
+        </div>
+      </div>
+      <p class="spec-note">How an insight will read when published — labels only.</p>
+      <div class="insight-grid" aria-hidden="true">
+        <article class="insight-card is-spec">
+          <img src="img/material-detail.jpg" alt="" width="640" height="360" />
+          <p class="topic">Topic</p>
+          <h3>Insight title</h3>
+          <p>Short excerpt.</p>
+          <span class="card-go">Read Insight</span>
+        </article>
+        <article class="insight-card is-spec">
+          <img src="img/gurugram-street.jpg" alt="" width="640" height="360" />
+          <p class="topic">Topic</p>
+          <h3>Insight title</h3>
+          <p>Short excerpt.</p>
+          <span class="card-go">Read Insight</span>
+        </article>
+        <article class="insight-card is-spec">
+          <img src="img/why-interior.jpg" alt="" width="640" height="360" />
+          <p class="topic">Topic</p>
+          <h3>Insight title</h3>
+          <p>Short excerpt.</p>
+          <span class="card-go">Read Insight</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 CONSULTATION CTA — static -->
+  <section class="consult" aria-labelledby="consult-title">
+    <img src="img/consult-facade.jpg" alt="Residential architecture in Gurugram at evening" width="1600" height="900" />
+    <div class="shade" aria-hidden="true"></div>
+    <div class="consult-inner wrap">
+      <p class="eyebrow light">Conversation</p>
+      <h2 id="consult-title">Not sure what the right move is?</h2>
+      <p>Whether you are buying, selling, investing, or still forming the question — tell us the situation. We will tell you if a conversation is useful.</p>
+      <div class="btn-row">
+        <a class="btn btn-ink" href="https://mayfairpropertiesdevelopers.com/consult-with-us/" style="background:#F9F7F2;color:#1A1A1A;">Discuss Your Requirement</a>
+        <a class="btn btn-ghost" href="tel:+919873712902">Call Mayfair</a>
+      </div>
+      <p class="micro">No pressure. A focused conversation about your requirement.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot">
+    <div class="foot-brand">
+      <img class="foot-logo" src="img/logo-dark.webp" alt="Mayfair Properties &amp; Developers" />
+      <p>Gurugram-focused advisory for buyers, sellers and investors — verified opportunities, local market expertise and transparent guidance.</p>
+      <div class="nap">
+        P-106, Sohna–Gurgaon Road<br />
+        Uppal Southend, Sector 48<br />
+        Gurugram 122018<br />
+        <a href="tel:+919873712902">+91 98737 12902</a>
+      </div>
+    </div>
+    <div class="col">
+      <h2 class="col-title">Portfolio</h2>
+      <a href="https://mayfairpropertiesdevelopers.com/residential/">Apartments</a>
+      <a href="https://mayfairpropertiesdevelopers.com/residential/">Villas</a>
+      <a href="https://mayfairpropertiesdevelopers.com/residential/">Plots</a>
+      <a href="https://mayfairpropertiesdevelopers.com/residential/">Builder floors</a>
+      <a href="https://mayfairpropertiesdevelopers.com/commercial/">Commercial</a>
+      <a href="https://mayfairpropertiesdevelopers.com/residential/">Residential</a>
+    </div>
+    <div class="col">
+      <h2 class="col-title">Advisory</h2>
+      <a href="https://mayfairpropertiesdevelopers.com/buy-property/">Buy a property</a>
+      <a href="https://mayfairpropertiesdevelopers.com/sell-property/">Sell / valuation</a>
+      <a href="https://mayfairpropertiesdevelopers.com/rent-property/">Rent</a>
+      <a href="https://mayfairpropertiesdevelopers.com/want-to-invest-in-property/">Invest</a>
+      <a href="https://mayfairpropertiesdevelopers.com/consult-with-us/">Consult</a>
+    </div>
+    <form class="enquiry" id="enquiryForm" action="#" method="post">
+      <h3>Request a callback</h3>
+      <label for="fn">Full name *</label>
+      <input id="fn" name="name" type="text" required autocomplete="name" />
+      <label for="ph">Phone *</label>
+      <input id="ph" name="phone" type="tel" required autocomplete="tel" inputmode="tel" />
+      <label for="em">Email *</label>
+      <input id="em" name="email" type="email" required autocomplete="email" />
+      <label for="tm">Best time to call</label>
+      <select id="tm" name="best_time">
+        <option value="">Select…</option>
+        <option>Morning (10:00–13:00)</option>
+        <option>Afternoon (13:00–16:00)</option>
+        <option>Evening (16:00–18:00)</option>
+      </select>
+      <label class="consent">
+        <input type="checkbox" name="consent" required />
+        <span>I agree to be contacted by Mayfair Properties &amp; Developers about my enquiry.</span>
+      </label>
+      <button class="btn btn-bronze" type="submit">Submit enquiry</button>
+    </form>
+  </div>
+  <div class="legal">
+    <span>© 2026 Mayfair Properties &amp; Developers</span>
+    <span>Privacy · Terms</span>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Mobile actions">
+  <a href="tel:+919873712902">Call</a>
+  <a href="https://wa.me/919873712902">WhatsApp</a>
+  <a href="#enquiryForm">Enquire</a>
+</nav>
+
+<script>
+(function () {
+  var ham = document.getElementById('ham');
+  var drawer = document.getElementById('drawer');
+  var backdrop = document.getElementById('backdrop');
+  function openMenu() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    ham.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+  }
+  function closeMenu() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    ham.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+  ham.addEventListener('click', function () {
+    drawer.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  backdrop.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+  document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+  });
+})();
+</script>
+</body>
+</html>
