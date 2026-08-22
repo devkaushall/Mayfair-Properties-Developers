@@ -129,8 +129,11 @@ Font comparison page (Playfair vs Source Serif 4 vs Arima). **Not** the producti
 | `mayfair-forms-leads.zip` | Mayfair Forms & Leads |
 | `mayfair-implementation-assistant.zip` | Assistant |
 | `mayfair-runtime-diagnostics.zip` | Diagnostics |
+| `mayfair-arena-ai-bridge.zip` | Arena AI Bridge (from GitHub `0afd502`) |
 
 Unzip into WordPress plugins as before. Do not treat zips as the HTML source of truth (`site/` is).
+
+Root image dump from commit `0afd502` (58 webps: pexels, download (1), UUIDs, luxury villas) is in `archive/media-dump/`. Do not use those on Home. Production photos live in `site/img/`.
 
 ---
 
